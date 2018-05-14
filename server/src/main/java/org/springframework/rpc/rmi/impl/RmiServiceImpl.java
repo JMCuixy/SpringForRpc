@@ -6,6 +6,7 @@ import org.springframework.rpc.model.User;
 import org.springframework.rpc.rmi.RmiService;
 import org.springframework.stereotype.Service;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,11 +17,6 @@ import java.util.List;
 public class RmiServiceImpl implements RmiService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RmiService.class);
-
-    @Override
-    public void print() {
-        LOGGER.info("RMI 远程调用");
-    }
 
     @Override
     public List<User> listInfo() {
