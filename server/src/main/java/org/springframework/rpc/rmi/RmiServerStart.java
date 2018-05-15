@@ -3,6 +3,7 @@ package org.springframework.rpc.rmi;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.rpc.config.JavaConfig;
+import org.springframework.rpc.config.WebConfig;
 
 /**
  * Created by XiuYin.Cui on 2018/5/14.

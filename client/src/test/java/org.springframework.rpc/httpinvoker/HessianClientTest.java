@@ -1,4 +1,4 @@
-package org.springframework.rpc.rmi;
+package org.springframework.rpc.httpinvoker;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,11 +18,11 @@ import java.util.List;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = JavaConfig.class)
-public class RmiClientTest {
+public class HessianClientTest {
 
-    private static Logger logger = LoggerFactory.getLogger(RmiClientTest.class);
+    private static Logger logger = LoggerFactory.getLogger(HessianClientTest.class);
 
-    @Resource(name="rmiUserServiceClient")
+    @Resource(name="httpInvokerUserServiceClient")
     private UserService userService;
 
 

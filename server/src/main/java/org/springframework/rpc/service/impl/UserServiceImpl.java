@@ -1,12 +1,11 @@
-package org.springframework.rpc.rmi.impl;
+package org.springframework.rpc.service.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.rpc.model.User;
-import org.springframework.rpc.rmi.RmiService;
+import org.springframework.rpc.service.UserService;
 import org.springframework.stereotype.Service;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,9 +13,9 @@ import java.util.List;
  * Created by XiuYin.Cui on 2018/5/7.
  */
 @Service
-public class RmiServiceImpl implements RmiService {
+public class UserServiceImpl implements UserService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(RmiService.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserService.class);
 
     @Override
     public List<User> listInfo() {
